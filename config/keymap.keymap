@@ -25,7 +25,7 @@
 &kp TAB    &kp Q     &kp W  &kp E  &kp R  &kp T                            &kp Y  &kp U  &kp I      &kp O     &kp P          &kp BACKSPACE
 &kp LCTRL  &kp A     &kp S  &kp D  &kp F  &kp G      &none      &none      &kp H  &kp J  &kp K      &kp L     &kp SEMICOLON  &kp ENTER
 &kp LSHFT  &kp Z     &kp X  &kp C  &kp V  &kp B      &mkp LCLK  &mkp RCLK  &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
-&kp LALT   &kp RWIN  &none  &mo 1  &mo 2  &kp SPACE  &kp ESC    &to 0      &to 3  &none  &none      &kp RWIN  &kp RIGHT_ALT  &to 4
+&kp LALT   &kp RWIN  &none  &mo 1  &mo 2  &kp SPACE  &none      &to 0      &to 3  &none  &none      &kp RWIN  &kp RIGHT_ALT  &to 4
             >;
         };
 
