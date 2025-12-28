@@ -12,7 +12,7 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-            layers = <2>;
+            layers = <3>;
         };
     };
 
@@ -25,25 +25,31 @@
 &kp TAB    &kp Q     &kp W  &kp E  &kp R  &kp T                             &kp Y  &kp U  &kp I      &kp O     &kp P          &kp BACKSPACE
 &kp LCTRL  &kp A     &kp S  &kp D  &kp F  &kp G      &none      &none       &kp H  &kp J  &kp K      &kp L     &kp SEMICOLON  &kp ENTER
 &kp LSHFT  &kp Z     &kp X  &kp C  &kp V  &kp B      &mkp LCLK  &mkp RCLK   &kp N  &kp M  &kp COMMA  &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
-&kp LALT   &kp RWIN  &none  &mo 1  &mo 2  &kp SPACE  &kp SPACE  &kp ESCAPE  &none  &none  &none      &kp RWIN  &kp RIGHT_ALT  &none
+&kp LALT   &kp RWIN  &none  &mo 2  &mo 3  &kp SPACE  &kp SPACE  &kp ESCAPE  &none  &none  &none      &kp RWIN  &kp RIGHT_ALT  &none
             >;
         };
 
-        // Number keys
-
         layer_1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_2 {
             bindings = <
 &none      &none                 &none                  &none      &none         &none                            &none     &none     &none   &none      &none          &none
 &kp GRAVE  &kp N1                &kp N2                 &kp N3     &kp N4        &kp N5                           &kp N6    &kp N7    &kp N8  &kp N9     &kp N0         &trans
 &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp PLUS      &kp EQUAL       &trans   &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp SQT        &trans
 &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp ASTERISK  &kp UNDERSCORE  &trans   &trans  &kp HOME  &kp END   &trans  &trans     &kp BACKSLASH  &trans
-&trans     &trans                &trans                 &trans     &mo 3         &kp DEL         &kp DEL  &trans  &trans    &trans    &trans  &trans     &trans         &trans
+&trans     &trans                &trans                 &trans     &mo 4         &kp DEL         &kp DEL  &trans  &trans    &trans    &trans  &trans     &trans         &trans
             >;
         };
 
-        // Mouse
-
-        layer_2 {
+        layer_3 {
             bindings = <
 &none          &none                 &none                  &none      &none         &none                            &none           &none           &none         &none       &none              &none
 &kp BACKSLASH  &kp EXCLAMATION       &kp AT_SIGN            &kp HASH   &kp DOLLAR    &kp PERCENT                      &kp CARET       &kp AMPERSAND   &kp ASTERISK  &kp MINUS   &kp EQUAL          &kp BACKSPACE
@@ -53,9 +59,7 @@
             >;
         };
 
-        // Mouse-scroll & function keys
-
-        layer_3 {
+        layer_4 {
             bindings = <
 &none  &none   &none   &none   &none   &none                 &none   &none   &none   &none            &none    &none
 &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                &kp F6  &kp F7  &kp F8  &kp F9           &kp F10  &none
@@ -65,23 +69,13 @@
             >;
         };
 
-        layer_4 {
+        layer_5 {
             bindings = <
 &none            &none            &none            &none     &none  &none                &none  &none  &none  &none  &none  &none
 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none     &none  &none                &none  &none  &none  &none  &none  &kp BACKSPACE
 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none     &none  &none  &none  &none  &none  &none  &none  &none  &none  &kp ENTER
 &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
 &kp KP_NUMBER_0  &kp KP_NUMBER_0  &kp KP_DOT       &none     &none  &none  &none  &none  &to 0  &none  &none  &none  &none  &none
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
