@@ -16,6 +16,22 @@
         };
     };
 
+    macros {
+        Ctrl_S: ipad_C_S {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "IPAD_C_S";
+        };
+
+        Com_c: ipad_co_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+            label = "IPAD_CO_C";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
