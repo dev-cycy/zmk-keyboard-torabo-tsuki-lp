@@ -16,6 +16,15 @@
         };
     };
 
+    macros {
+        ipad_space: ipad_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>;
+            label = "IPAD_SPACE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,11 +40,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp A   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &mo 2   &mo 3   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
+&none      &none  &none  &none  &none  &none                        &none  &none  &none      &none       &none          &none
+&kp TAB    &kp Q  &kp W  &kp E  &kp R  &kp T                        &kp Y  &kp U  &kp I      &kp O       &kp P          &kp BACKSPACE
+&mo 6      &kp A  &kp S  &kp D  &kp F  &kp G  &none      &none      &kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &mkp LCLK  &mkp RCLK  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHFT
+&none      &none  &none  &mo 2  &mo 3  &none  &none      &none      &none  &none  &none      &none       &none          &none
             >;
         };
 
@@ -81,11 +90,11 @@
 
         layer_6 {
             bindings = <
-&none      &none      &none      &none      &none      &none                    &none      &none      &none      &none      &none      &none
-&none      &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)                &kp LG(Y)  &kp LG(U)  &kp LG(I)  &kp LG(O)  &kp LG(P)  &none
-&none      &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)  &none  &none  &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &none      &none
-&kp LSHFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)  &none  &none  &kp LG(N)  &kp LG(M)  &none      &none      &none      &kp RSHFT
-&none      &none      &none      &none      &none      &none      &none  &none  &none      &none      &none      &none      &none      &none
+&none      &none      &none      &none      &none      &none                            &none      &none      &none      &none      &none      &none
+&none      &kp LG(Q)  &kp LG(W)  &kp LG(E)  &kp LG(R)  &kp LG(T)                        &kp LG(Y)  &kp LG(U)  &kp LG(I)  &kp LG(O)  &kp LG(P)  &none
+&none      &kp LG(A)  &kp LG(S)  &kp LG(D)  &kp LG(F)  &kp LG(G)    &none        &none  &kp LG(H)  &kp LG(J)  &kp LG(K)  &kp LG(L)  &none      &none
+&kp LSHFT  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(B)    &none        &none  &kp LG(N)  &kp LG(M)  &none      &none      &none      &kp RSHFT
+&none      &none      &none      &none      &none      &ipad_space  &ipad_space  &none  &none      &none      &none      &none      &none      &none
             >;
         };
     };
