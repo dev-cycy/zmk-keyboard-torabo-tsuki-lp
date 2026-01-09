@@ -97,6 +97,16 @@
 &none      &none      &none      &none      &none      &ipad_space  &ipad_space  &none  &none      &none      &none      &none      &none      &none
             >;
         };
+
+        layer_7 {
+            bindings = <
+&none  &none  &none  &none  &none  &none                             &none           &none           &none          &none      &none  &none
+&none  &none  &none  &none  &none  &none                             &none           &none           &none          &none      &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &kp LA(LEFT_ARROW)  &mkp LCLK       &mkp RCLK       &kp RA(RIGHT)  &none      &none  &none
+&none  &none  &none  &none  &none  &none  &none  &kp ESC             &kp LC(W)       &none           &none          &none      &none  &none
+            >;
+        };
     };
 };
 
